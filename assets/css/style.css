@@ -1,57 +1,59 @@
-#firstTitle {
+#firstTitle {  /* Selectionne l'élément qui posséde l'id 'firstTitle',
+ l'identifiacteur '#' précise que l'on selectionne un élèment par son id */
     color: red;
 }
 
-.title {
+.title { /* Selectionne tout les élèments qui possèdent la class 'title',
+ l'identificateur '.' précise que l'on selectionne des élèments par class */
     font-size: 2rem;
     font-family: "Consolas", serif;
 }
 
-h2 span {
+h2 span { /* Selectionne tout les 'span' enfant de 'h2' */
     font-size: 1rem;
     color: darkgreen;
 }
 
-h2 > span {
+h2 > span { /* Selectionne tout les 'span' enfant direct de 'h2' */
     font-size: 2rem;
     color: orange;
 }
 
-h2 + span {
+h2 + span { /* Selectionne tout les 'span' adjacent directement un 'h2' */
     font-size: 3rem;
 }
 
-h2 ~ span {
+h2 ~ span {/* Selectionne tout les 'span' adjacent indirectement un 'h2' */
     color: cyan;
 }
 
-input[name] {
+input[name] { /* Selectionne tout les 'input' possédant un attribut 'name' */
     border: 3px red dotted;
 }
 
-a[href^="mailto"] {
+a[href^="mailto"] { /* Selectionne tout les 'a' possédant un attribut 'href' qui commence par "mailto" */
     color: orange;
 }
 
-a[href$="host"] {
+a[href$="host"] { /* Selectionne tout les 'a' possédant un attribut 'href' qui términe par "host" */
     color: blue;
 }
 
-a[href*="a"] {
+a[href*="a"] {/* Selectionne tout les 'a' possédant un attribut 'href' qui contient "a" */
     text-decoration: none;
 }
 
-span, div {
+span, div { /* Selectionne tout les 'span' et toutes les 'div' */
     text-decoration: underline;
 }
 
-/*div h2, div span, div div {*/
+/*div h2, div span, div div { /* Selectionne toutes les 'div', 'span' et 'div' se trouvant dans une 'div' */
 /*    border: 1px solid red;*/
 /*}
 /* Equivalent à ce qui suit
 */
 
-div :is(h2, span, div) {
+div :is(h2, span, div) { /* Selectionne toutes les 'div', 'span' et 'div' se trouvant dans une 'div' */
     border: 1px solid green;
 }
 
