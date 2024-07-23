@@ -1,0 +1,60 @@
+#firstTitle {
+    color: red;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: "Consolas", serif;
+}
+
+h2 span {
+    font-size: 1rem;
+    color: darkgreen;
+}
+
+h2 > span {
+    font-size: 2rem;
+    color: orange;
+}
+
+h2 + span {
+    font-size: 3rem;
+}
+
+h2 ~ span {
+    color: cyan;
+}
+
+input[name] {
+    border: 3px red dotted;
+}
+
+a[href^="mailto"] {
+    color: orange;
+}
+
+a[href$="host"] {
+    color: blue;
+}
+
+a[href*="a"] {
+    text-decoration: none;
+}
+
+span, div {
+    text-decoration: underline;
+}
+
+/*div h2, div span, div div {*/
+/*    border: 1px solid red;*/
+/*}
+/* Equivalent à ce qui suit
+*/
+
+div :is(h2, span, div) {
+    border: 1px solid green;
+}
+
+div:has(h2, span,div) {
+    border: 2px solid cyan;
+}
