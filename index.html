@@ -8,99 +8,99 @@
   <link rel="stylesheet" href="./assets/css/style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
   <header>
+    <a href="#">
+      <img src="assets/img/Paper_plane_brand.svg" alt="" /> <!-- Un alt vide permet de préciser que l'image n'est pas importante pour le contenu -->
+      <div>
+        <h1 class="lato-black">Site <span class="lato-light">Name</span></h1>
+        <p class="header-subtitle lato">your caption here</p>
+      </div>
+    </a>
     <nav>
-      <h1>Mon site</h1>
-      <ol>
-        <li>Accueil</li>
-        <li>Posts</li>
-        <li>Boutique</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <span>span</span>
-        <div>div</div>
-      </ol>
+      <a href="#" class="navLink selected">Home</a>
+      <a href="#" class="navLink">About</a>
+      <a href="#" class="navLink">Services</a>
+      <a href="#" class="navLink">Portfolio</a>
+      <a href="#" class="navLink">Contact</a>
     </nav>
   </header>
   <main>
-
-    <span>Span 1</span> <span>Span 2</span>
-
-    <section class="container">
-      <p>Detracto massa sociis salutatus scripta vehicula ei congue percipit dicunt omittantur sapientem erroribus suscipit tellus blandit tamquam dictas suas tale primis affert verterem detraxit verterem curae doctus natoque discere blandit veri ea metus feugiat autem tibique dis scelerisque rhoncus erroribus ad ipsum augue laudem instructior parturient singulis dictumst verear referrentur faucibus utinam dicit eius ut habitant hinc petentium petentium detracto pertinax sagittis singulis liber suscipit pulvinar quas quidam utroque veniam numquam dico blandit te quidam posse verterem sapientem voluptatum viris honestatis adipisci agam nascetur suscipit veri donec dicat vivamus metus eum adhuc qualisque tincidunt instructior faucibus reque atomorum curae graecis atqui harum at periculis libris nullam quidam noluisse ridens ultricies morbi debet accumsan habitasse melius agam pertinacia felis vocibus postea justo habitant est deserunt doming.</p>
+    <section class="container bg-primary">
+      <img srcset="assets/img/phone/phone_mockup.webp 600w, assets/img/phone/phone_mockup@2x.webp 1200w"  alt="">
+      <article class="content">
+        <h2 class="content-title sourceSans-light">Lorem ipsum dolor sit amet</h2>
+        <h3 class="content-subtitle sourceSans-black">donec nec justo eget</h3>
+        <p class="content-text sourceSans">Morbi in sem quis dui placerat ornare. Pellentesque odio
+          euismod in, pharetra a, ultricies in, diam. </p>
+        <a href="#" class="cta btn sourceSans">more info</a>
+      </article>
     </section>
-    <section class="container">
-      <form action="">
-        <div class="inputGroup">
-          <label for="name"></label>
-          <input type="text" required name="name" id="name">
+    <section class="container bg-secondary">
+      <article class="card">
+        <div class="img">
+          <div><img class="icon" src="./assets/img/Flag.svg" alt=""></div>
         </div>
-        <div class="inputGroup">
-          <label for="surname"></label>
-          <input type="text" name="surname" id="surname">
+        <div class="content">
+          <h3 class="content-title sourceSans-bold">Ausce Cellentes</h3>
+          <p class="content-text sourceSans">Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique</p>
+          <a href="" class="more sourceSans-bold">read more<img src="./assets/img/arrow.svg" alt=""></a></div>
+      </article>
+      <article class="card">
+        <div class="img">
+          <div><img class="icon" src="./assets/img/Camera.svg" alt=""></div>
         </div>
-        <input type="submit" value="Envoyé">
-      </form>
+        <div class="content">
+          <h3 class="content-title sourceSans-bold">Vestibul auctor</h3>
+          <p class="content-text sourceSans">Loasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique</p>
+          <a href="" class="more sourceSans-bold">read more<img src="./assets/img/arrow.svg" alt=""></a></div>
+      </article>
+      <article class="card">
+        <div class="img">
+          <div><img class="icon" src="./assets/img/Home.svg" alt=""></div>
+        </div>
+        <div class="content">
+          <h3 class="content-title sourceSans-bold">Cras ornare</h3>
+          <p class="content-text sourceSans">Simasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique</p>
+          <a href="" class="more sourceSans-bold">read more<img src="./assets/img/arrow.svg" alt=""></a></div>
+      </article>
     </section>
-    <section class="container">
-      <div class="card">
-        <div class="card-header"></div>
-        <div class="card-body">
-          <div class="card-body__header"></div>
-          <div class="card-body__content"></div>
-          <div class="card-body__footer"></div>
+    <section class="container bg-primary">
+      <article class="content">
+        <img src="./assets/img/imgperson1.jpg" alt="Photo de Lorem ipsum dolor sit amet souriant" class="profilePic">
+        <div class="content-wrapper">
+          <h3 class="content-title sourceSans-bold">Lorem ipsum dolor sit amet</h3>
+          <p class="content-text sourceSans">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi earum nesciunt unde iure quia doloribus impedit perspiciatis. Sapiente quibusdam nostrum eaque recusandae, autem accusamus quasi quaerat? Pariatur, molestiae. Accusamus provident placeat facere dolorem vel eaque veniam pariatur!.
+            Porro necessitatibus nisi labore facere numquam.
+          </p>
+          <a href="#" class="cta btn sourceSans">more</a>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header"></div>
-        <div class="card-body">
-          <div class="card-body__header"></div>
-          <div class="card-body__content"></div>
-          <div class="card-body__footer"></div>
+      </article>
+      <article class="content">
+        <img src="./assets/img/imgperson2.jpg" alt="Photo de Sed egestas ante et vulpu souriant" class="profilePic">
+        <div class="content-wrapper">
+          <h3 class="content-title sourceSans-bold">Sed egestas ante et vulpu</h3>
+          <p class="content-text sourceSans">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi earum nesciunt unde iure quia doloribus impedit perspiciatis. Sapiente quibusdam nostrum eaque recusandae, autem accusamus quasi quaerat? Pariatur, molestiae. Accusamus provident placeat facere dolorem vel eaque veniam pariatur!.
+            Porro necessitatibus nisi labore facere numquam.
+          </p>
+          <a href="#" class="cta btn sourceSans">more</a>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header"></div>
-        <div class="card-body">
-          <div class="card-body__header"></div>
-          <div class="card-body__content"></div>
-          <div class="card-body__footer"></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header"></div>
-        <div class="card-body">
-          <div class="card-body__header"></div>
-          <div class="card-body__content"></div>
-          <div class="card-body__footer"></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header"></div>
-        <div class="card-body">
-          <div class="card-body__header"></div>
-          <div class="card-body__content"></div>
-          <div class="card-body__footer"></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header"></div>
-        <div class="card-body">
-          <div class="card-body__header"></div>
-          <div class="card-body__content"></div>
-          <div class="card-body__footer"></div>
-        </div>
-      </div>
+      </article>
     </section>
   </main>
-  <footer>
-    &copy; 2024 all right reserved
+  <footer class="bg-secondary">
+    <aside class="copyright sourceSans">
+      &copy; Sitename. All rights Reserved.
+    </aside>
+    <aside class="socials">
+      <div class="circle bg-primary"><img src="./assets/img/fb.svg" alt="icône facebook"></div>
+      <div class="circle bg-primary"><img src="./assets/img/twitter.svg" alt="icône twitter"></div>
+    </aside>
   </footer>
 </body>
 </html>

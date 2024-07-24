@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 44" width="513" height="418">
+	<title>Paper_plane_brand</title>
+	<style>
+		.s0 { fill: #2485b4 } 
+		.s1 { fill: #48b0e3 } 
+		.s2 { fill: #359dd0 } 
+	</style>
+	<g id="Paper plane">
+		<path id="bottom dark" class="s0" d="m37 32.9l-9.3 11.2 4-14.2z"/>
+		<path id="right wing" class="s1" d="m53.8-0.1l-10.1 42.7-12-12.7z"/>
+		<path id="inside" class="s2" d="m53.8-0.1l-21.4 30.7-4.7 13.5-12.1-18.7"/>
+		<path id="left wing" class="s1" d="m53.8-0.1l-38.2 26.2-15.4-0.7z"/>
+	</g>
+</svg>
