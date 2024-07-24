@@ -1,0 +1,102 @@
+
+:root {
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('ttf');
+    font-weight: 400;
+}
+
+
+
+li {
+    position: relative;
+    font-family: "Open Sans",Arial, serif;
+}
+
+ol li:nth-child(even) {
+    font-size: .9rem;
+    color: red;
+}
+
+ol li:first-child {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+ol li:last-child {
+    text-transform: uppercase;
+}
+
+ol li:last-of-type {
+    text-transform: uppercase;
+}
+
+ol li:nth-child(odd) {
+    color: green;
+}
+
+ol li:nth-child(3n+4) {
+    text-decoration: underline;
+}
+
+section {
+    min-height: 400px;
+}
+
+section:nth-child(odd) {
+    background: #C1C1C1;
+}
+
+ol :not(:is(span, li)) {
+    font-size: 2em;
+}
+
+div:empty {
+    width: 200px;
+    height: 400px;
+    background: darkred;
+}
+
+form {
+    width: 50vw;
+}
+
+input {
+    outline: none;
+    width: 50vw;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+li::before {
+    content: '*';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    width: calc(50vw + 100px);
+    font-size: 16px;
+}
+
+section {
+    min-height: 100vh;
+}
+
+ol {
+    display: flex;
+}
+
+ol li {
+    width: 25%;
+}
