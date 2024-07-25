@@ -7,19 +7,19 @@
   width: 100px;
   background: var(--primary-color);
   transition: var(--transition);
-}
-.container-button {
-  border: 1px solid red;
-}
-.container-button__light {
-  color: white;
-}
-.container:hover {
-  scale: 1.5;
+  &-button {
+    border: 1px solid red;
+
+    &__light {
+      color: white;
+    }
+  }
+
+  &:hover {
+    scale: 1.5
+  }
 }
 
 body {
   padding: 0;
 }
-
-/*# sourceMappingURL=style.css.map */
