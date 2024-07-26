@@ -29,6 +29,11 @@
   font-size: 1rem;
   font-weight: var(--medium-text);
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: var(--primary-bg-color);
+  color: var(--secondary-text-color);
 }
 .btn__cta {
   background: var(--tertiary-bg-color);
@@ -149,6 +154,13 @@
   position: relative;
   margin-inline: 3rem;
 }
+.container#carrousel .container-body .carrousel-item:hover {
+  cursor: pointer;
+}
+.container#carrousel .container-body .carrousel-item:hover figcaption {
+  background: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+}
 .container#carrousel .container-body .carrousel-item img {
   max-height: 324px;
 }
@@ -165,15 +177,22 @@
   text-align: center;
   padding: 1.5rem 3rem;
   height: 100px;
+  transition: all 0.3s ease;
 }
 .container#carrousel .container-footer {
   padding-top: 2rem;
 }
 .container#carrousel .container-footer a {
+  transition: all 0.3s ease;
   color: var(--secondary-text-color);
   font-size: 1rem;
   font-weight: var(--medium-text);
   text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+.container#carrousel .container-footer a:hover {
+  background: var(--secondary-bg-color);
 }
 .container#conclusion {
   flex-direction: column;
