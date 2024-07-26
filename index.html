@@ -5,12 +5,141 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="assets/js/slick/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/js/slick/slick/slick-theme.css"/>
   <link rel="stylesheet" href="assets/css/style.css">
- <title>Document</title>
+  <title>Belajar | Portfolio</title>
 </head>
 <body>
+<main>
+  <section id="landing" class="container">
+    <article class="container-part">
+      <h1 class="container-part_title">Belajar Skill dengan Mentor Expert</h1>
+      <p class="container-part_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <div class="container-part_buttons">
+        <button class="container-part_buttons-button btn">Cari Kelas</button>
+        <button class="container-part_buttons-button__cta btn btn__cta">Promo 70%</button>
+      </div>
+    </article>
+    <img fetchpriority="high" srcset="assets/img/women/women.png 570w, assets/img/women/women@2x.png 1140w"
+         sizes="(max-width: 1200px) 570px, 1140px" alt="Phote de Belejar de face souriante." class="container-img">
+  </section>
+  <section id="certificat" class="container">
+    <div class="img">
+      <img srcset="assets/img/certification/certification.jpg 269w, assets/img/certification/certification-1.jpg 538w"
+           sizes="(max-width: 900px) 269px, 538px" alt="Image d'exemple de cértificat"/>
+    </div>
+    <article class="container-part">
+      <h2 class="container-part_title">Gabung Kelas dan Dapatkan <span class="dark">Sertifikat</span></h2>
+      <p class="container-part_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut
+      </p>
+      <button class="container-part_button btn btn__cta">Promo 70%</button>
+    </article>
+  </section>
+  <section id="carrousel" class="container">
+    <div class="container-head">
+      <h2 class="container-head_title">Akses Jutaan Video tanpa Batas</h2>
+    </div>
+    <div class="container-body">
+      <div id="carrousel_container" class="carrousel">
+        <figure class="carrousel-item">
+          <img src="./assets/img/carrousel1.jpg" alt="Un homme regardant son écran d'ordinateur">
+          <figcaption>Front End Development with CodeIgniter</figcaption>
+        </figure>
+        <figure class="carrousel-item">
+          <img src="./assets/img/carrousel2.jpg" alt="Un homme regardant son écran d'ordinateur">
+          <figcaption>UX Research, User Persona, and User Story</figcaption>
+        </figure>
+        <figure class="carrousel-item">
+          <img src="./assets/img/carrousel3.jpg" alt="Un homme regardant son écran d'ordinateur">
+          <figcaption>Basic Photography & How to Set Up Camera</figcaption>
+        </figure>
+        <figure class="carrousel-item">
+          <img src="./assets/img/carrousel4.jpg" alt="Un homme regardant son écran d'ordinateur">
+          <figcaption>Data and Web Mining: Expert System</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="container-footer">
+      <a href="#">Lihat Video Lainnya &gt;</a>
+    </div>
+  </section>
+  <section id="conclusion" class="container">
+    <h1 class="container-title">Dapatkan <span class="dark">Points</span> Setiap Selesai Kelas</h1>
+    <p class="container-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod.
+    </p>
+    <button class="container-button btn btn__cta">Promo 70%</button>
+  </section>
+</main>
+<footer>
   <div class="container">
-    <button class="container-button container-button__light">Button</button>
+    <a href="#" class="social">
+      <img src="assets/img/facebook.png" alt="icône facebook" class="icon">
+    </a>
+    <a href="#" class="social">
+      <img src="assets/img/instagram.png" alt="icône instagram" class="icon">
+    </a>
+    <a href="#" class="social">
+      <img src="assets/img/tiktok.png" alt="icône tiktok" class="icon">
+    </a>
   </div>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/slick/slick/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".carrousel").slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      responsive: [
+        {
+          breakpoint: 1641,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 801,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true
+          }
+        },
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+          }
+        }
+      ]
+    })
+  })
+</script>
 </body>
 </html>
